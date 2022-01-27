@@ -27,7 +27,7 @@
 
 ![Image](https://user-images.githubusercontent.com/97641097/151312525-dc75a7ea-e4d3-44b9-9189-8ee045d877d9.png) (from nolinks.md)
 
-* [Link to failure-inducing input](https://github.com/pranavMekkoth1/markdown-parse/blob/main/nolinks.md)
+* [Link to test file for failure-inducing input](https://github.com/pranavMekkoth1/markdown-parse/blob/main/nolinks.md)
 
 * output of running the file at command line at this time:
 
@@ -43,7 +43,7 @@
 
 ![Image](https://user-images.githubusercontent.com/97641097/151305788-d5b371c8-e731-4786-874d-f7ef42388e05.png) (form MarkdownParse)
 
-![Image](https://user-images.githubusercontent.com/97641097/151313113-6597c9f5-b72d-44cf-a0e8-6d057f1a583b.png) (from the spaces.md)
+![Image](https://user-images.githubusercontent.com/97641097/151313113-6597c9f5-b72d-44cf-a0e8-6d057f1a583b.png) (from spaces.md)
 
 * [Link to test file for failure-inducing input](https://github.com/pranavMekkoth1/markdown-parse/blob/main/spaces.md)
 
