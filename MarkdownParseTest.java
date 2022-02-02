@@ -27,7 +27,7 @@ public class MarkdownParseTest {
         // MarkdownParse.getLinks("");
         assertEquals(linksdata, links);
 
-        Path fileName1= Path.of("links_with_chars.md");
+        Path fileName1= Path.of("space_test.md");
         String contents2 = Files.readString(fileName);
         ArrayList<String> links2 = MarkdownParse.getLinks(contents2);
         ArrayList<String> linksdata2 = MarkdownParse.getLinks("links_with_chars.md");
