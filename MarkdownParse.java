@@ -11,20 +11,27 @@ public class MarkdownParse {
         // the next )
         int currentIndex = 0;
         while(currentIndex < markdown.length()) {
+            
             int nextOpenBracket = markdown.indexOf("[", currentIndex);
             int nextCloseBracket = markdown.indexOf("]", nextOpenBracket);
             int openParen = markdown.indexOf("(", nextCloseBracket);
             int closeParen = markdown.indexOf(")", openParen);
-            
-            if(nextOpenBracket ==-1 || nextCloseBracket==-1 || openParen==-1 ||closeParen==-1){
-                break;
+           
+             //difference between Image vs Link
+             //check if link on first line
+             if(nextOpenBracket != 0 && markdown.charAt(nextOpenBracket-1)=='!'){
+                currentIndex = closeParen+1;
+                continue;
             }
-            
-            if(nextCloseBracket +1 ==openParen){
-                 toReturn.add(markdown.substring(openParen + 1, closeParen));
+
+            //fix missing parentheses
+            if(openParen == -1){
+                return toReturn;
             }
-            
+
+            toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
+            
         }
         return toReturn;
     }
