@@ -23,12 +23,17 @@ public class MarkdownParse {
                 currentIndex = closeParen+1;
                 continue;
             }
-
             //fix missing parentheses
             if(openParen == -1){
                 return toReturn;
             }
-
+            //no space between brackets
+            if(openParen -closeParen !=1){
+                currentIndex=closeParen+1;
+                continue;
+                //toReturn.add(markdown.substring(openParen + 1, closeParen));
+           }
+            
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
             
