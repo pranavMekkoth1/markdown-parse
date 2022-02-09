@@ -19,7 +19,7 @@ public class MarkdownParse {
            
              //difference between Image vs Link
              //check if link on first line
-             if(nextOpenBracket != 0 && markdown.charAt(nextOpenBracket-1)=='!'){
+            if(nextOpenBracket != 0 && markdown.charAt(nextOpenBracket-1)=='!'){
                 currentIndex = closeParen+1;
                 continue;
             }
