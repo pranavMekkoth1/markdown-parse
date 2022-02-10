@@ -28,7 +28,7 @@ public class MarkdownParse {
                 return toReturn;
             }
             //no space between brackets
-            if(openParen -closeParen !=1){
+            if(openParen - nextCloseBracket !=1){
                 currentIndex=closeParen+1;
                 continue;
                 //toReturn.add(markdown.substring(openParen + 1, closeParen));
